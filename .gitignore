@@ -7,4 +7,4 @@ composer.phar
 
 # Ignore all files with the specified name.
 # Scope is all repo folders.
-.env
+*.env
