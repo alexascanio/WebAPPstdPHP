@@ -1,0 +1,5 @@
+.home-logo img {
+    width: inherit;
+    object-fit: cover;
+    max-height: 150px;
+}

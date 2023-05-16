@@ -1,0 +1,194 @@
+/* Menú */
+ul.acordeon{
+  margin-top: 0;
+  margin-left: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  width: 85%;
+  font-size: 18px;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+ul.acordeon li{
+  list-style: none;
+}
+
+/* Menú  CON redireccionamiento*/
+ul.acordeon li a{
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  background: rgba(0,0,0);
+  color: rgba(255, 255, 255);
+  border-bottom: 1px solid #444444;
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+  height: 60px;
+}
+
+/* Menú  SIN redireccionamiento*/
+ul.acordeon li p{
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  background: rgba(0,0,0);
+  color: rgba(255, 255, 255);
+  border-bottom: 1px solid #444444;
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+  height: 60px;
+}
+
+ul.acordeon li p i{
+  width: 25px;
+  height: 15px;
+
+}
+
+/* Efecto al hacer click en Menú CON redireccionamiento */
+ul.acordeon li a:hover{
+  color: rgba(0,0,0);
+  font-size: 18px;
+  background: rgb(180, 180, 180);
+  border-bottom: 1px solid #8c969b;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5),0px -1px 1px rgba(0,0,0,.3);
+}
+
+/* Efecto al hacer click en Menú SIN redireccionamiento */
+ul.acordeon li p:hover{
+  background: #ffd700;
+  font-size: 18px;
+  color: rgba(0,0,0);
+  font-size: 18px;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5),0px -1px 1px rgba(0,0,0,.3);
+}
+
+/* ul.acordeon li li:last-child a {
+  border-bottom: 0;
+} */
+
+/* Ocultar SubMenú */
+ul.acordeon li ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  /* max-height: 0; para esconder cada submenu */
+  max-height: 0;
+  transition: .3s all ease-in;
+}
+
+/* Items del SubMenú */
+ul.acordeon li li a{
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  background: rgb(180, 180, 180);
+  color: rgba(255, 255, 255);
+  font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid #8c969b;
+  box-sizing: border-box;
+}
+
+/* ul.acordeon li li:last-child a {
+  border-bottom: 0;
+} */
+
+ul.acordeon li:hover ul{
+  max-height: 300px;
+  transition: .3s all ease-in;
+}
+
+/* Efecto para despues de hacer click */
+/* ul.acordeon li a:hover {
+  background: #8c969b;
+  color: #fff;
+} */
+
+.fa-chevron-down {
+  /* content: url("../images/iconos/flecha-abajo-blanco.png"); */
+}
+
+
+/* Modal para mostrar Menú */
+/* Modal para mostrar Menú */
+/* Modal para mostrar Menú */
+/* Modal para mostrar Menú */
+/* Modal para mostrar Menú */
+
+/*Efecto*/
+.menumodalmask{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 101;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  overflow: auto;
+}
+
+.menumodalmask img{
+  width: 100%;
+}
+
+.menumodalmask:target{
+  opacity:1;
+  pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.menumodalbox{
+  width: inherit;
+  max-width: 1200px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+/*Movimientos*/
+.menumovedown{
+  margin: 0 auto;
+}
+
+.menurotate{
+  margin: 0 auto;
+  -webkit-transform: scale(-5,-5);
+  transform: scale(-5,-5);
+}
+
+.menuresize{
+  margin: 0 auto;
+  width:0;
+  height:0;
+
+}
+
+.menumodalmask:target .menumovedown{       
+  margin: 0 auto;
+}
+
+.menumodalmask:target .menurotate{     
+  transform: rotate(360deg) scale(1,1);
+  -webkit-transform: rotate(360deg) scale(1,1);
+}
+
+.menumodalmask:target .menuresize{
+  width:100%;
+  height:200px;
+}

@@ -1,0 +1,12 @@
+.home-menu-burger a {
+  text-decoration: none;
+}
+
+.home-menu-burger a img {
+  width: 50px;
+}
+
+.home-menu-burger p {
+  color: #ffff;
+  font-size: 16px;
+}

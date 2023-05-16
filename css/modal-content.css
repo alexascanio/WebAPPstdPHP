@@ -1,0 +1,200 @@
+/*Encabezado Div modal*/
+.div-modal-header {
+  width: 100%;
+  max-width: 1200px;
+  position: fixed;
+  height: 45px;
+  background: rgb(255, 255, 255, 0.95);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+
+  z-index: 111;
+}
+
+.modal-close {
+  width: 9%;
+  float: left;
+  height: inherit;
+  display: flex;
+  align-items: center;
+
+}
+
+.modal-close a {
+  padding-left: 8px;
+  padding-right: 4px;
+
+}
+
+.modal-close a i {
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+}
+
+.modal-titulo {
+  width: 90%;
+  height: inherit;
+  float: right;
+  display: flex;
+  align-items:center;
+  justify-content: right;    
+}
+
+.modal-titulo p {
+  font-size: 15px;
+  padding-right: 3px;
+  text-align: right;
+}
+
+/* .modal-close:hover a {
+  background: rgba(0,0,0,0.1);
+} */
+
+
+/* Categoria */
+.text-categoria-carta
+{
+  font-size: 20px;
+  color: #ffd700;
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 6px;
+
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5),0px -1px 1px rgba(0,0,0,.3);
+}
+
+.text-subcategoria-carta
+{
+  font-size: 20px;
+  color: #ffd700;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 6px;
+}
+
+/* Name-Precio */
+.name-price {
+  width: 98%;
+  background: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  color: #000;
+  margin-bottom: .3rem;
+
+}
+
+.name-price:before {
+  content: '';
+  position: absolute;
+  bottom: .3rem;
+  width: 98%;
+  height: 0;
+  line-height: 0;
+  border-bottom: 2px dotted #000;
+}
+
+.name {
+  background: inherit;
+  z-index: 101;
+  padding-right: 1px;
+  margin-right: 20px;
+}
+
+.price {
+  background: inherit;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 1px;
+  text-align: right;
+  z-index: 102;
+}
+
+/* Descripción del producto */
+.carta-detalles {
+  width: 100%;
+  max-width: 1000px;
+  padding-left: 6px;
+  padding-bottom: 20px;
+  display: inline-flex;
+}
+
+.carta-detalles-left {
+  width: 75%;
+  text-align: left;
+}
+
+.carta-detalles-left p {
+  margin-right: 4px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.carta-detalles-left .carta-alergeno {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carta-detalles-right{
+  width: 23%;
+  /* align-items:; */
+  text-align: right;
+  /* background: rgba(3, 7, 255, 0.8); */
+}
+
+.carta-detalles-right img {
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.carta-alergeno {
+  width: 80%;
+}
+
+.carta-alergeno img {
+  width: 10%;
+  height: 10%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* Contenido modal modo Imagen */
+.modal-imagen {
+  width: 100%;
+  /* padding-bottom: 25%; */
+}
+
+.div-formato-images
+{
+    width: 100%;
+    height: auto;
+    padding-top: 9px;
+    border: none;  
+    text-align: center;
+}
+
+.div-formato-images img
+{
+    width: 97%;
+    border-radius: 16px;
+    object-fit:cover;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+  /* Iconos */
+
+  /* Cerrar */
+.fa-circle-xmark {
+    /* height: 16px; */
+    content: url("../images/iconos/fa-circle-xmark.png");
+}
+
+/* volver Atras */
+.fa-arrow-left-xmark {
+  /* height: 16px; */
+  content: url("../images/iconos/arrow_left-removebg-preview.png");
+}
